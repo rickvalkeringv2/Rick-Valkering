@@ -1,0 +1,5 @@
+.container-story {
+    margin-top: 2em;
+    width: 70%;
+    padding: 5em;
+}

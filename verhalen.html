@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Verhalen Website</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/filterfunctions.css" />
+    <script src="https://kit.fontawesome.com/d418bf039e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/ns_logokopie.png"></a>
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="verhalen.html">Alle verhalen</a>
+            <a href="inschrijven.html">Inschrijven</a>
+            <a href="#about">Contact</a>
+            <a href="javascript:void(0);"  id="buttonNav"  class="icon">&#9776;</a>
+        </nav>
+    </header>
+
+    <section class="landing">
+        <div class="container_landingtekst">
+            <h2>Krijg je geen genoeg van lezen?</h2>
+            <p>...dan is NS Verhalen er speciaal voor jou...</p>
+            <p><a href="#">> &nbsp; Meer informatie</a></p>
+            <button class="leesMeer_button YellowButton">Zoek je boek</button>
+        </div>
+
+    </section>
+
+    <div class="mastergrid">
+
+            <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Alle verhalen</button>
+                    <button class="btn" onclick="filterSelection('fictief')"> Fictief</button>
+                    <button class="btn" onclick="filterSelection('roman')"> Roman</button>
+                    <button class="btn" onclick="filterSelection('kinderen')"> Kinderen</button>
+                    <button class="btn" onclick="filterSelection('actie')"> Actie</button>
+            </div>
+
+        <h2 class="SectionTitle">Kies jouw verhaal...</h2>
+        <div class="container_stroke_verhaal">
+                <article class="filterDiv fictief container_box">
+                        <img class="img-contain" src="images/verhaal1.jpg" alt="afbeelding 3" />
+        
+                        <div class="container-content">
+                        <button class="favorite">Favoriet</button>
+                        
+                        <section class="modal">
+                                <section class="modal-content">
+                                    <span class="close-button">&times;</span>
+                                    <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                                    </section>
+                        </section>
+                            
+                        
+                        <h2>Stoned</h2>
+                        <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                        <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+
+                        <a class="uitwerking" href="verhaal1.html">Lees verder...</a>
+                        </div>
+                </article>
+    
+                
+    
+                <article class="container_box filterDiv actie">
+                        <img class="img-contain" src="images/verhaal2.jpg" alt="afbeelding 3" />
+                        <div class="container-content">
+                        <button class="favorite">Favoriet</button>
+                        
+                        <section class="modal">
+                                <section class="modal-content">
+                                    <span class="close-button">&times;</span>
+                                    <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                                    </section>
+                        </section>
+    
+                        <h2>De Droom</h2>
+                        <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                        <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+
+                        <a class="uitwerking" href="verhaal2.html">Lees verder...</a>
+                        </div>
+                </article>
+    
+                <article class="container_box filterDiv actie">
+                        <img class="img-contain" src="images/verhaal3.jpg" alt="afbeelding 3" />
+        
+                        <div class="container-content">
+                        <button class="favorite">Favoriet</button>
+                        
+                        <section class="modal">
+                                <section class="modal-content">
+                                    <span class="close-button">&times;</span>
+                                    <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                                    </section>
+                        </section>
+    
+                        <h2>Zombie</h2>
+                        <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                        <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+
+                        <a class="uitwerking" href="verhaal3.html">Lees verder...</a>
+                        </div>
+                </article>
+    
+                <article class="container_box filterDiv actie">
+                        <img class="img-contain" src="images/verhaal4.jpg" alt="afbeelding 3" />
+        
+                        <div class="container-content">
+                        <button class="favorite">Favoriet</button>
+                        
+                        <section class="modal">
+                                <section class="modal-content">
+                                    <span class="close-button">&times;</span>
+                                    <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                                    </section>
+                        </section>
+    
+                        <h2>Steenkolenfrans</h2>
+                        <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                        <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+                        </div>
+                </article>
+
+                <article class="container_box filterDiv kinderen">
+                    <img class="img-contain" src="images/verhaal5.jpg" alt="afbeelding 3" />
+    
+                    <div class="container-content">
+                    <button class="favorite">Favoriet</button>
+                    
+                    <section class="modal">
+                            <section class="modal-content">
+                                <span class="close-button">&times;</span>
+                                <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                                </section>
+                    </section>
+
+                    <h2>Martin Bril</h2>
+                    <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                    <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+                    </div>
+            </article>
+
+            <article class="container_box filterDiv roman">
+                <img class="img-contain" src="images/verhaal6.jpg" alt="afbeelding 3" />
+
+                <div class="container-content">
+                <button class="favorite">Favoriet</button>
+                
+                <section class="modal">
+                        <section class="modal-content">
+                            <span class="close-button">&times;</span>
+                            <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                            </section>
+                </section>
+
+                <h2>Het gebrek</h2>
+                <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+                </div>
+                </article>
+
+                <article class="container_box filterDiv roman">
+                        <img class="img-contain" src="images/verhaal7.jpg" alt="afbeelding 3" />
+        
+                        <div class="container-content">
+                        <button class="favorite">Favoriet</button>
+                        
+                        <section class="modal">
+                                <section class="modal-content">
+                                    <span class="close-button">&times;</span>
+                                    <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                                    </section>
+                        </section>
+    
+                        <h2>Vergezocht</h2>
+                        <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                        <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+                        </div>
+                </article>
+
+                <article class="container_box filterDiv fictief">
+                    <img class="img-contain" src="images/verhaal8.jpg" alt="afbeelding 3" />
+    
+                    <div class="container-content">
+                    <button class="favorite">Favoriet</button>
+                    
+                    <section class="modal">
+                            <section class="modal-content">
+                                <span class="close-button">&times;</span>
+                                <h1>Leuk! Het verhaal is toegevoegd aan je favorieten.</h1>
+                                </section>
+                    </section>
+
+                    <h2>Zombie</h2>
+                    <p>"HET VERHAAL VAN GEEN IDEE"</p>
+                    <P>Lees hier de nieuwste aanwinst op NS Verhalen. Een spannende non-fictie die je van begin tot eind betrokken houdt.</P>
+                    </div>
+                    </article>
+        </div>
+    </div>
+
+    <footer>
+            <h2 class="footer_informatie">Extra informatie</h2>
+            <ul class="footer_content">
+    
+                <li>
+                    <h3>Direct naar...</h3>
+                    <ul>
+                        <li><a href="#">Homepagina</a></li>
+                        <li><a href="#">Categorieen</a></li>
+                        <li><a href="#">Aanmeldformulier</a></li>
+                    </ul>
+                </li>
+    
+                <li>
+                    <h3>Over ons</h3>
+                    <p>Hier komt wat informatie te staan over de NS. Gewoon wat random informatie voor mensen die graag de footer willen lezen.</p>
+                </li>
+    
+                <li>
+                    <h3>Contact</h3>
+                    <p>Hier komt wat informatie te staan over de NS. Gewoon wat random informatie voor mensen die graag de footer willen lezen.</p>
+                </li>
+    
+                <li>
+                    <h3>Sociale Media</h3>
+                    <p>Hier komt wat informatie te staan over de NS. Gewoon wat random informatie voor mensen die graag de footer willen lezen.</p>
+                </li>
+    
+            </ul>
+    
+            <ul class="second_footer_content">
+                <li><a href="#">> Contact</a></li>
+                <li><a href="#">> Disclaimer</a></li>
+                <li><a href="#">> Algemene voorwaarden</a></li>
+                <li><img src="images/ns_logokopie.png"></li>
+            </ul>
+        </footer>
+</body>
+
+<script>
+    function checkLogin(){
+        var loginForm = document.getElementById("loginFormArticle");
+        loginForm.parentNode.removeChild(loginForm);
+    }
+
+    filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+</html> 

@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'StoneyBilly';
+    src: url('../fonts/StoneyBilly.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/StoneyBilly.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/StoneyBilly.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/StoneyBilly.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/StoneyBilly.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/StoneyBilly.svg') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'AlwaysForever';
+    src: url('../fonts/alwaysforever.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/alwaysforever.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/alwaysforever.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/alwaysforever.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/alwaysforever.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/alwaysforever.svg') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    background-color: #fff;
+    background-image: url("../images/bg-verhaal1.jpg");
+    background-size: cover;
+}
+
+.button-conainer {
+    text-align: center;
+}
+
+.button-conainer h3 {
+    margin-bottom: 1%;
+}
+
+.container-story {
+    margin-top: 5em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    background-color: #fff;
+    background-image: url(../images/stoned.png);
+    font-family: 'alwaysforever',sans-serif;
+    font-size: 26px;
+}
+
+.weedImg {
+    width: 200px;
+    margin-left: -115px;
+    position: absolute;
+    top: 35px;
+    transform: rotate(-20deg);
+}
+
+.weedImg-container {
+    width: 100%;
+    text-align: right;
+}
+.weedImg2 {
+    width: 200px;
+    transform: rotate(20deg);
+    margin-right: -115px;
+}
+
+.StoryTitle {
+    text-align: center;
+    font-family: 'StoneyBilly',sans-serif;
+    font-size: 85px;
+}
+
+#pram, #bus {
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+.inline-image {
+    width: 50px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* Styling favoriet */
+
+.like-content{
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+    font-size: 18px;
+    border-top: 10px dashed #eee;
+    text-align: center;
+}
+.like-content span {
+	color: #9d9da4;
+	font-family: monospace;
+}
+.like-content .btn-secondary {
+	  display: block;
+	  margin: 40px auto 0px;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    padding: 10px 17px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.like-content .btn-secondary:hover {
+	  transform: translateY(-3px);
+}
+.like-content .btn-secondary .fa {
+	  margin-right: 5px;
+}
+.animate-like {
+	animation-name: likeAnimation;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 0.65s;
+}
+@keyframes likeAnimation {
+  0%   { transform: scale(30); }
+  100% { transform: scale(1); }
+}
+
+/* Styling 2 column grid */
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Media Query's */
+
+@media screen and (max-width:800px) {
+    .container-story {
+        width: 80%;
+    }
+
+    .column {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    .row {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

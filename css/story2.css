@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'Starcruiser';
+    src: url('../fonts/Starcruiser.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Starcruiser.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Starcruiser.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Starcruiser.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/Starcruiser.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Starcruiser.svg') format('svg'); /* Legacy iOS */
+  }
+
+body {
+    background-image: url(../images/stars.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.container-story {
+    margin-top: 5em;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    font-family: Arial;
+    color: #fff;
+}
+
+.StoryTitle {
+    text-align: center;
+    font-family: 'Starcruiser', sans-serif;
+    font-size: 5em;
+}
+.StoryTitle .word {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+.RotatedAlinea {
+    transform: rotate(-3deg);
+    margin: 3rem 0;
+    margin-right: 5rem;
+}
+
+.RotatedAlineaInver {
+    transform: rotate(3deg);
+    margin: 3rem 0;
+    margin-left: 5rem;
+}
+
+#BottomImage {
+    position: fixed;
+    bottom: 0;
+    left: 1em;
+    width: 10%;
+}
+
+/* Favorieten styling */
+
+.like-content{
+    display: inline-block;
+    width: 100%;
+    margin: 40px 0 0;
+    padding: 40px 0 0;
+    font-size: 18px;
+    border-top: 10px dashed #eee;
+    text-align: center;
+}
+.like-content span {
+	color: #9d9da4;
+	font-family: monospace;
+}
+.like-content .btn-secondary {
+	  display: block;
+	  margin: 40px auto 0px;
+    text-align: center;
+    background: #ed2553;
+    border-radius: 3px;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    padding: 10px 17px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.like-content .btn-secondary:hover {
+	  transform: translateY(-3px);
+}
+.like-content .btn-secondary .fa {
+	  margin-right: 5px;
+}
+.animate-like {
+	animation-name: likeAnimation;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-duration: 0.65s;
+}
+@keyframes likeAnimation {
+  0%   { transform: scale(30); }
+  100% { transform: scale(1); }
+}
+
+/* Media Queries */
+
+/* Media Query's */
+
+@media screen and (max-width:800px) {
+    .container-story {
+        width: 80%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .RotatedAlineaInver {
+        margin-left: 4rem;
+    }
+
+    .RotatedAlinea {
+        margin-right: 4rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container-story {
+        width: 90%;
+    }
+
+    .column {
+        width: 100%;
+    }
+
+    .RotatedAlineaInver {
+        margin-left: 3rem;
+    }
+
+    .RotatedAlinea {
+        margin-right: 3rem;
+    }
+
+    .StoryTitle {
+        font-size: 3em;
+    }
+}
+
+@media screen and (min-width:1100px) {
+
+    .row {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Styling 2 column grid */
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

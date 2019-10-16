@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verhalen Website</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="images/ns_logokopie.png"></a>
+
+        <!--<section class="searchbar">
+             <input class="zoeken" type="text" placeholder="Zoek een boek..." required />
+                <button class="searchbtn" type="submit">Ga</button>
+            </section>-->
+
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="verhalen.html">Alle verhalen</a>
+            <a href="inschrijven.html">Inschrijven</a>
+            <a href="#about">Contact</a>
+            <a href="javascript:void(0);"  id="buttonNav"  class="icon">&#9776;</a>
+        </div>
+    </header>
+
+    <section class="landing">
+        <div class=container_landingtekst>
+            <h2>Schrijf je nu gratis in</h2>
+            <p>NS Verhalen de eerste maand helemaal gratis!</p>
+            <button class="leesMeer_button">Prijzen</button>
+        </div>
+
+    </section>
+
+    <section class="container_stroke">
+        <form class="container_signup_form">
+            <h1>Gratis inschrijven</h1>
+            <h2>Scroll naar beneden om je inschrijving te voltooien</h2>
+            <fieldset class="container_signup">
+
+
+                <label>Man</label>
+                <input class="loginform"  type="radio" name="gender" value=male>
+
+                <label>Vrouw</label>
+                <input class="loginform" type="radio" name="gender" value=female>
+
+                <p><label for=gebd>Geboortedatum</label>
+                <input class="loginform" type="date" id=gebd name="gebd" required></p>
+
+                <label for=gname>Nieuwe gebruikersnaam</label>
+                <input class="loginform" type="text" id=gname placeholder="Hier uw gebruikersnaam..." name="uname" required>
+
+                <label for=fname>Uw voornaam</label>
+                <input class="loginform" type="text" id=fname placeholder="Hier uw voornaam..." name="uname" required>
+
+                <label for=lname>Uw achternaam</label>
+                <input class="loginform" type="text" id=lname placeholder="Hier uw achternaam..." name="uname" required>
+
+                <label for=email>Uw emailadres</label>
+                <input class="loginform" type="email" id=email placeholder="Hier uw emailadres..." name="mail" required>
+
+                <label for=tel>Telefoonnummer</label>
+                <input class="loginform" type="tel" id=tel placeholder="Hier uw telefoonnummer..." name="mail">
+
+                <label for=wname>Nieuw wachtwoord</label>
+                <input class="loginform" type="password" id=wname placeholder="Hier uw wachtwoord..." name="psw" required>
+
+                <label for=wname>Herhaal wachtwoord</label>
+                <input class="loginform" type="password" id=wname placeholder="Herhaal uw wachtwoord..." name="psw" required>
+
+                <button class="signup_button" type="submit">Inschrijven</button>
+            </fieldset>
+        </form>
+
+    </section>
+
+    <footer class="footer_container">
+
+        <ul class="footer_content">
+            <li>
+                <h1>Direct naar...</h1>
+                <ul>
+                    <li><a href="#">Homepagina</a></li>
+                    <li><a href="#">Categorieen</a></li>
+                    <li><a href="#">Aanmeldformulier</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <h1>Over ons</h1>
+                <p>Hier komt wat informatie te staan over de NS. Gewoon wat random informatie voor mensen die graag de footer willen lezen.</p>
+            </li>
+
+            <li>
+                <h1>Contact</h1>
+                <p>Hier komt wat informatie te staan over de NS. Gewoon wat random informatie voor mensen die graag de footer willen lezen.</p>
+            </li>
+
+            <li>
+                <h1>Sociale Media</h1>
+                <p>Hier komt wat informatie te staan over de NS. Gewoon wat random informatie voor mensen die graag de footer willen lezen.</p>
+            </li>
+
+        </ul>
+
+        <ul class="second_footer_content">
+            <li><a href="#">> Contact</a></li>
+            <li><a href="#">> Disclaimer</a></li>
+            <li><a href="#">> Algemene voorwaarden</a></li>
+            <li><img src="images/ns_logokopie.png"></li>
+        </ul>
+    </footer>
+
+<script src="js/navigatie.js"></script>
+</body>
+
+</html>
